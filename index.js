@@ -13,24 +13,30 @@
 stopButton.addEventListener('click', () => {
   if (stopLight.style.backgroundColor === 'red') {
     stopLight.style.backgroundColor = 'black';
+    console.log(`${goButton.textContent} bulb off`)
   } else {
     stopLight.style.backgroundColor = 'red';
+    console.log(`${stopButton.textContent} bulb on`)
   }
 })
 
 slowButton.addEventListener('click', () => {
   if (slowLight.style.backgroundColor === 'yellow') {
     slowLight.style.backgroundColor = 'black';
+    console.log(`${goButton.textContent} bulb off`)
   } else {
     slowLight.style.backgroundColor = 'yellow';
+    console.log(`${stopButton.textContent} bulb on`)
   }
 })
 
 goButton.addEventListener('click', () => {
   if (goLight.style.backgroundColor === 'green') {
     goLight.style.backgroundColor = 'black';
+    console.log(`${goButton.textContent} bulb off`)
   } else {
     goLight.style.backgroundColor = 'green';
+    console.log(`${stopButton.textContent} bulb on`)
   }
 })
 
@@ -54,7 +60,6 @@ goButton.addEventListener('mouseenter', (e) => {
 goButton.addEventListener('mouseleave', (e) => {
   console.log(`Left ${e.target.textContent} button.`)
 })
-
 
 
 
