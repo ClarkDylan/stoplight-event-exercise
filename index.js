@@ -13,7 +13,7 @@
 stopButton.addEventListener('click', () => {
   if (stopLight.style.backgroundColor === 'red') {
     stopLight.style.backgroundColor = 'black';
-    console.log(`${goButton.textContent} bulb off`)
+    console.log(`${stopButton.textContent} bulb off`)
   } else {
     stopLight.style.backgroundColor = 'red';
     console.log(`${stopButton.textContent} bulb on`)
@@ -23,10 +23,10 @@ stopButton.addEventListener('click', () => {
 slowButton.addEventListener('click', () => {
   if (slowLight.style.backgroundColor === 'yellow') {
     slowLight.style.backgroundColor = 'black';
-    console.log(`${goButton.textContent} bulb off`)
+    console.log(`${slowButton.textContent} bulb off`)
   } else {
     slowLight.style.backgroundColor = 'yellow';
-    console.log(`${stopButton.textContent} bulb on`)
+    console.log(`${slowButton.textContent} bulb on`)
   }
 })
 
@@ -36,30 +36,30 @@ goButton.addEventListener('click', () => {
     console.log(`${goButton.textContent} bulb off`)
   } else {
     goLight.style.backgroundColor = 'green';
-    console.log(`${stopButton.textContent} bulb on`)
+    console.log(`${goButton.textContent} bulb on`)
   }
 })
 
-stopButton.addEventListener('mouseenter', (e) => {
-  console.log(`Entered ${e.target.textContent} button.`)
-})
-stopButton.addEventListener('mouseleave', (e) => {
-  console.log(`Left ${e.target.textContent} button.`)
-})
+// stopButton.addEventListener('mouseenter', (e) => {
+//   console.log(`Entered ${e.target.textContent} button.`)
+// })
+// stopButton.addEventListener('mouseleave', (e) => {
+//   console.log(`Left ${e.target.textContent} button.`)
+// })
 
-slowButton.addEventListener('mouseenter', (e) => {
-  console.log(`Entered ${e.target.textContent} button.`)
-})
-slowButton.addEventListener('mouseleave', (e) => {
-  console.log(`Left ${e.target.textContent} button.`)
-})
+// slowButton.addEventListener('mouseenter', (e) => {
+//   console.log(`Entered ${e.target.textContent} button.`)
+// })
+// slowButton.addEventListener('mouseleave', (e) => {
+//   console.log(`Left ${e.target.textContent} button.`)
+// })
 
-goButton.addEventListener('mouseenter', (e) => {
-  console.log(`Entered ${e.target.textContent} button.`)
-})
-goButton.addEventListener('mouseleave', (e) => {
-  console.log(`Left ${e.target.textContent} button.`)
-})
+// goButton.addEventListener('mouseenter', (e) => {
+//   console.log(`Entered ${e.target.textContent} button.`)
+// })
+// goButton.addEventListener('mouseleave', (e) => {
+//   console.log(`Left ${e.target.textContent} button.`)
+// })
 
 
 
